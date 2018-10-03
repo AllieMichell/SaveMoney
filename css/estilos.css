@@ -1,0 +1,24 @@
+﻿body {
+    background-image: url('../imagenes/Fondo 2.jpg');
+    background-size:cover;
+}
+
+header {
+    background-color: #05B153;
+    height: 300px;
+}
+
+#titulo{
+    font-family:Arial;
+    font-size:48px;
+}
+.botonesPrincipales{
+    height:200px;
+    width: 200px;
+    margin-left:90px; 
+    margin-top:20px; 
+}
+
+.textoBotonesPrincipales{
+    font-size:48px;
+}

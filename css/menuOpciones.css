@@ -1,0 +1,16 @@
+﻿body {
+    background-image: url('../imagenes/fondo3.png');
+}
+
+.botonEcuacion{
+    margin-top: 15px;
+    margin-left: 20px;
+    background-color: rgba(67, 160, 71, 0.7);
+}
+
+.botonEcuacion h2{
+
+    font-size: 48px;
+}
+
+/**  Hoja de Estilos para los menu de Opciones  **/

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--DATOS NUEVOS-->
+    <!--Monto -->
+    <meta charset="utf-8" />
+    <title>Save Money</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="../css/w3.css" rel="stylesheet" />
+    <link href="../css/MenuOpciones.css" rel="stylesheet" />
+
+    <script src="../scripts/jquery-1.9.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../JS/index_JS.js"></script>
+    <script src="MenuMontoBeta.html.js"></script>
+</head>
+
+<body>
+    <div>
+        <!---->
+        <nav class="w3-bar w3-green">
+
+            <a href="../index.html" class="w3-bar-item w3-button">
+                <img src="../imagenes/Menu.svg" height="60" width="60" />
+            </a>
+            <a href="#" class="w3-bar-item w3-button">
+                <img src="../imagenes/Nota.svg" height="60" width="60" />
+            </a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-center">
+                <div class="w3-container">
+                    <div class="col-sm-3">
+                        <img src="../imagenes/Logo bueno.png" height="70" width="70" class="w3-image" />
+                    </div>                    <h1 class="col-sm-9">Save Money</h1>
+                </div>
+            </a>
+            <a href="../ManualDeUso.html" class="w3-bar-item w3-button w3-right">
+                <img src="../imagenes/Iconos Botones/informacion.svg" height="50" width="50" />
+            </a>
+        </nav>
+
+        <div>
+            <!--Botones verdes para la interfaz de ecuaciones-->
+            <div class="w3-third">
+                <div style="margin-top: 20px;">
+                    <div id="btnMonto" class="col-sm-10 w3-text-white w3-hover-green botonEcuacion">
+                            <div>
+                                <h3 class="col-xs-9">Monto</h3>
+                                <h2><span class="glyphicon glyphicon-arrow-right col-xs-3" aria-hidden="true"></span></h2>
+                            </div>
+                    </div>
+                    <a href="vistasmontoo/descuento.html">
+                        <div class="col-sm-10 w3-text-white botonEcuacion w3-hover-green">
+                            <div>
+                                <h3 class="col-xs-9">Descuento</h3>
+                                <h2><span class="glyphicon glyphicon-arrow-right col-xs-3" aria-hidden="true"></span></h2>
+                            </div>
+                        </div>     
+                    </a>
+                   
+                    <a href="vistasmontoo/ValorAnticipado.html">
+                        <div class="col-sm-10 w3-text-white botonEcuacion w3-hover-green">
+                            <div>
+                                <h3 class="col-xs-9">Valor anticipado</h3>
+                                <h2><span class="glyphicon glyphicon-arrow-right col-xs-3" aria-hidden="true"></span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="btnRentaPago" class="col-sm-10 w3-text-white w3-hover-green botonEcuacion">
+                        <div>
+                            <h3 class="col-xs-9">Renta o pago</h3>
+                            <h2><span class="glyphicon glyphicon-arrow-right col-xs-3" aria-hidden="true"></span></h2>
+                        </div>
+                    </div>
+                    <div id="btnValorActual" class="col-sm-10 w3-text-white w3-hover-green botonEcuacion">
+                            <div>
+                                <h3 class="col-xs-9">Valor actual</h3>
+                                <h2><span class="glyphicon glyphicon-arrow-right col-xs-3" aria-hidden="true"></span></h2>
+                            </div>
+                    </div>                 
+                    </div>
+                </div>
+            </div>
+            <!--Submenu donde el usuario termina de escojer las opciones finales-->
+            <div class="w3-twothird">
+                <div class="w3-margin">
+                    <div class="w3-padding w3-green">
+                        <div class="w3-margin w3-white w3-container">
+                            <div id="MontosConDescuento" class="w3-text-green Cuadro">
+                                <h4 class="w3-center">Calculo de pago :</h4>
+                                <div>
+
+                                    <a href="vistasmontoo/RentaConMonto.html">
+                                        <div id="RentaConociendoElMonto" class="w3-half">
+                                            <img src="../imagenes/Renta o pago.svg" class="w3-image col-xs-offset-2 col-xs-8" height="180" />
+                                            <h2 class="w3-text-green w3-center">Renta conociendo el monto </h2>
+                                        </div>
+                                    </a>
+                                    <a href="vistasmontoo/RentaConVP.html">
+                                        <div id="RentaConociendoElValorPresente" class="w3-half">
+                                            <img src="../imagenes/Renta o pago.svg" class="w3-image col-xs-offset-2 col-xs-8" height="180" />
+                                            <h2 class="w3-text-green w3-center">Renta conociendo el valor presente</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="ValorActual" hidden class="w3-text-green Cuadro">
+                                <!--ESTE ES EL APARTADO DONDE SE ENCUENTRA EL SUBMENU DE INTERES POR PERIODO-->
+                                <h4 class="w3-center">Calculo de valor actual conociendo:</h4>
+                                <div>
+
+                                    <a href="">
+                                        <div id="MontoCapitalTasadeInteres" class="w3-half">
+                                            
+                                            <img src="../imagenes/Valor actual.svg" class="w3-image col-xs-offset-2 col-xs-8" height="180" />
+                                            <h2 class="w3-text-green w3-center">Monto,Capital, tasa de interés y plazo</h2>
+                                        </div>
+                                    </a>
+                                    <a href="vistasmontoo/TasaDescuentoNumPagos.html">
+                                        <div id="TasadeDescuentoNumerodePagosRenta" class="w3-half">
+                                            <img src="../imagenes/Valor actual.svg" class="w3-image col-xs-offset-2 col-xs-8" height="180" />
+                                            <h2 class="w3-text-green w3-center">Tasa de descuento, No.de pagos y renta </h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="Monto" hidden class=" w3-text-green Cuadro">
+                                <!--ESTE ES EL APARTADO DONDE SE ENCUENTRA EL SUBMENU DE INTERES CON PERIODO DE CAPITALIZACIÓN-->
+                                <h4 class="w3-center">Calcular monto en base a :</h4>
+                                <div>
+
+                                    <a href="vistasIntereses/InteresConCapDiaria.html">
+                                        <div id="Montos" class="w3-half">
+                                            
+                                            <img src="../imagenes/Monto-bolsa.svg" class="w3-image col-xs-offset-2 col-xs-8" height="180" />
+                                            <h2 class="w3-text-green w3-center">Monto</h2>
+                                        </div>
+                                    </a>
+                                    <a href="vistasIntereses/InteresConCapSemanal.html">
+                                        <div id="MontoSinRentaYPlazo" class="w3-half">
+                                           <img src="../imagenes/Monto-bolsa.svg" class="w3-image col-xs-offset-2 col-xs-8" height="180" />
+                                            <h2 class="w3-text-green w3-center">Monto sin renta y plazo </h2>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    <
+</body>
+</html>
